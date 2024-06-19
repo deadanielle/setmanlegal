@@ -237,7 +237,7 @@ function hideMenu(){
 $(document).ready(function(){
   $('.client_slider').slick({
     slidesToShow: 2,
-          slidesToScroll: 3,
+          slidesToScroll: 2,
           rows:6,
     dots:true, 
     mobileFirst:true,
@@ -268,7 +268,7 @@ $(document).ready(function(){
 );
 $('.testimonial_card_slider').slick({
   centerMode: true,
-  centerPadding: '0',
+  centerPadding: '30px',
   dots:true,
   autoplay:true,
   autoplaySpeed:1000,
@@ -276,11 +276,11 @@ $('.testimonial_card_slider').slick({
   slidesToShow: 3,
   responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 767,
       settings: {
         arrows: false,
         centerMode: true,
-        centerPadding: '40px',
+        centerPadding: '70px',
         slidesToShow: 1
       }
     },

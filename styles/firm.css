@@ -1,18 +1,16 @@
 .firm{
-    /* height:420px; */
+  
     align-items: center;
     padding-top: 2rem;
     --padding-inline:0;
-    /* margin-inline:auto; */
+   
     z-index: 1;
     justify-content: center;
    
   
     
 }
-/* .header__wrapper{
-    border: 1px solid red;
-} */
+
 .title{
     position:relative;
     font-weight:800;
@@ -56,7 +54,7 @@ h2.title:hover{
     font-size: clamp(1rem, calc(1.35rem + 1vw), 3.75rem);
 }
 .content{
-    font-size: 20px;
+    font-size: 15px;
     max-width: 600px;
     text-align: center;
     margin-top: 0.8rem;
@@ -102,5 +100,14 @@ h2.title:hover{
     .svg{
         width:50px !important;
         height:50px !important;
+    }
+  }
+
+  @media (min-width:768px){
+    .content{
+        font-size: 20px;
+        max-width: 600px;
+        text-align: center;
+        margin-top: 0.8rem;
     }
   }
