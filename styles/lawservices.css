@@ -1,0 +1,419 @@
+/* ----------------Law Services----------------------- */
+.law_services{
+  padding-bottom: 1rem;
+    --padding-inline: 0.5rem;
+    
+  }
+  .law{
+       flex-wrap:wrap;
+       width:100%;
+       --gap:2rem;
+       justify-content: center;
+  }
+  .header__wrapper{ 
+    justify-content: center;
+    align-items: center;
+  }
+  .title{
+    font-size: var(--fs-200);
+  }
+  .law__card{
+    height:7rem;
+    width:7rem;
+    flex-direction: column;
+    border-radius: 11px;
+    box-shadow: 0 0 20px -7px #fbfbfb;
+    position: relative;
+  }
+  .law_image{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    z-index:-1;
+    opacity:1;
+    border-radius: inherit;
+  }
+  .card__content{
+    position:absolute;
+    bottom:0;
+    left:0;
+    background: rgba(20, 20, 20, 0.49);
+    height:40px;
+    border-radius: 0 0 8px 8px;
+    width:100%;
+    text-align: center;
+    font-size: var(--fs-75);
+    color:var(--body-white);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .law__card::after
+   { 
+    background: rgba(20, 20, 20, 0.49);
+    content: ""; 
+    display: block;
+    position: absolute; 
+    top: 0px; 
+    left: 0px;
+    width: 100%;
+    height: 100%; 
+    z-index: -1; 
+    opacity: 0.8; 
+    border-radius: inherit;
+    } 
+  .law__card:hover{
+    cursor: pointer;
+    opacity:1 !important;
+    background: rgba(20, 20, 20, 0.49);
+    z-index:1;
+   
+  }
+  .law__card:hover .card__content{
+    transform:translateY(-35px);
+    transition:transform 0.5s;
+    background: none;
+    font-weight:800;
+
+  }
+  .law__card:hover .law_image{
+    opacity:0.5;
+  }
+  .card__content_hover{
+    opacity: 0;
+  }
+  .law__card:hover .card__content_hover{
+    opacity: 1;
+  }
+  
+ 
+
+  .card__title{
+    white-space: nowrap;
+    margin-top:1rem;
+    margin-inline:1rem;
+    display:flex;
+    justify-content: center;
+    font-weight: 800;
+    font-size: var(--fs-100);
+  }
+  
+  
+  .law__card .card__inner{
+    display:none;
+  }
+
+  
+  
+  .show{
+    display:block;
+  }
+  .law_preview{
+  position: fixed;
+   top:0; left:0;
+   min-height: 100vh;
+   width: 100%;
+   background: rgba(0,0,0,.8);
+   display: none;
+   align-items: center;
+   justify-content: center;
+   margin-inline: auto;
+
+  
+  }
+  
+  .law_preview .preview{
+    width: 291px;
+    max-width:291px;
+    height:250px;
+   border: 2px solid var(--body-black);
+   border-radius: 5px;
+    display: none;
+    padding-top:2rem;
+    padding-bottom: 2rem;
+   padding-inline:2rem;
+   text-align: center;
+   background: #fff;
+   position: relative;
+    margin-inline:2rem;
+    font-size:var(--fs-100);
+   font-weight: 600;
+   margin-bottom: 1rem;
+  }
+  .law_preview .preview .card__info{
+ 
+    width:100%;
+   
+    text-align: left;
+    line-height: 0.7rem;
+  }
+  .law_preview .preview h2{
+   margin-top: 2rem;
+   letter-spacing: 0rem;
+   margin-bottom: 0.5rem;
+    width:100%;
+    white-space: nowrap;
+    font-weight:800;
+    font-size: var(--fs-100);
+    
+  }
+  .law_preview .preview.active{
+    display: inline-block;
+ }
+
+ .law_preview .preview .fa-times{
+  position: absolute;
+  top:0.5rem; right:1.0rem;
+  cursor: pointer;
+  color:#141414;
+  font-size: 1rem;
+}
+.card__info_point{
+  margin-top: 0.5rem;
+  display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:375px){
+  .container{
+    max-width: 375px;
+}
+.law__card{
+  height:9rem;
+  width:9rem;
+}
+.card__content{
+  
+  font-size: var(--fs-100);
+  
+  
+}
+.law__card:hover .card__content{
+  transform:translateY(-45px) !important;
+
+}
+}
+@media (min-width:425px){
+  .law__card:hover .card__content{
+    transform:translateY(-50px) !important;
+  
+  }
+}
+
+@media (min-width:640px){
+  .container{
+    max-width: 640px;
+}
+.law__card{
+  height:12rem;
+  width:12rem;
+}
+.card__content{
+  
+  font-size: var(--fs-100);
+  
+  
+}
+.law__card:hover .card__content{
+  transform:translateY(-70px) !important;
+
+}
+
+}
+  
+
+
+
+  @media(min-width:768px){
+    .container{
+        max-width: 768px;
+    }
+
+    .law_services{
+        /* height:750px !important; */
+        --padding-inline:4rem;
+      }
+      .law_services>*:where(:first-child){
+        align-self: center;
+      }
+      
+      .law__card{
+        height:210px !important;
+        width:210px !important;
+        display: grid;
+        place-items: center;
+        Z-index:1;
+        border-radius: 18px;
+        box-shadow: 0 0 10px -1px #141414;
+        position: relative;
+       
+        
+      }
+    
+      .law_image{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+        position: relative;
+        z-index:-1;
+        border-radius: inherit;
+      }
+      
+      .card__content{
+       all:unset;
+       position: absolute;
+       top:50%;
+       left:50%;
+       transform: translate(-50%,-50%);
+       white-space: nowrap;
+       padding-inline:0.2rem;
+       color:#fbfbfb;
+        font-size: var(--fs-100);
+       
+      }
+      .law__card:hover{
+        cursor: pointer;
+        opacity: .5;
+        transform:scale(1.1);
+        transition:transform 0.5s;
+      }
+      .law__card:hover{
+        cursor: pointer;
+        opacity:1 !important;
+        background: rgba(20, 20, 20, 0.49);
+        z-index:1;
+       
+      }
+      .law__card:hover .card__content{
+        transform:translate(-50%,-50%) !important;
+        font-weight:400;
+    
+      }
+      .law__card:hover .law_image{
+        opacity:1;
+      }
+      .card__content_hover{
+        opacity: 0;
+      }
+      .law__card:hover .card__content_hover{
+        opacity: 1;
+      }
+        
+    }
+    
+    
+  @media(min-width:820px){
+    .container{
+        max-width:820px;
+    }
+
+    .law__card{
+        height:250px !important;
+        width:250px !important;
+        
+      }
+
+  }
+
+  @media (min-width:1024px){
+    .container{
+        max-width: 1024px;
+        --padding-inline:3rem;
+    }
+   
+    .law>*:where(:last-child){
+      align-self: flex-start;
+    }
+    .card__content{
+      font-size: var(--fs-100);
+    }
+    .law__card .card__inner{
+      display: block;
+      
+      width:100%;
+      height: 100%;
+      position:absolute;
+      top:0;
+      bottom:0;
+      left:0;
+      right:0;
+      z-index:1;
+      background-color: var(--body-white);
+      border-radius: inherit;
+      opacity:0;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      --gap:1rem;
+      transition:transform 0.6s;
+      transform-style: preserve-3d;
+    }
+    .card__title{
+      margin-top:3rem;
+      padding:1rem;
+      white-space: nowrap;
+      display: flex;
+      
+    }
+    .card__inner .card__info,
+    .card__inner .card__title
+    {
+      margin-bottom: 0;
+      padding-inline: 1rem;
+
+      
+    }
+    .card__list{
+      line-height: 1.5rem;
+     
+    }
+  
+    .law__card:hover .card__inner
+    {
+      opacity: 1;
+      
+  
+    }
+    .show{
+      display:none;
+    }
+  }
+
+  @media (min-width:1440px){
+    .container{
+      max-width: 1440px;
+    }
+    .law_services{
+      gap:4rem;
+    }
+    .law{
+      --gap:4rem;
+    }
+    .law__card{
+      height:300px !important;
+      width:300px !important;
+      
+    }
+    .card__content{
+      font-size: var(--fs-300);
+    }
+  }

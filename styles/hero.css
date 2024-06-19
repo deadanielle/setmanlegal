@@ -1,0 +1,78 @@
+.hero{
+    min-height: 100dvh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.background{
+    background: url(/Images/clarisse-meyer-jKU2NneZAbI-unsplash.jpg);
+    width:100%;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    left:0; 
+    filter:blur(1px);
+    z-index:-1;
+    background-repeat: no-repeat;
+    background-position:right;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.hero__title
+{
+    color: #fbfbfb;
+    font-size: var(--fs-300) ;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+    width:100%;
+    margin:0;
+}
+.hero_body{
+    background: rgba(20, 20, 20, 0.49);
+    border:1px solid red;
+}
+.hero__body{
+    color: #fbfbfb;
+    background: rgba(20, 20, 20, 0.49);
+    font-size: clamp(1rem, 1.25rem, 3rem);
+    text-align: center;
+    padding:0.8rem;
+    line-height:2.1rem;
+    display: flex;
+    justify-content: center;
+    margin:0;
+    width:100%;
+}
+.hero__title span{
+      
+    
+    
+    color:#fbfbfb;
+   
+    letter-spacing: 3px;
+}
+
+.hero__section{
+   flex-direction: column;
+    align-items: flex-start;
+   
+}
+
+@media (min-width:640px){
+    .container{
+        max-width: 640px;
+    }
+    .hero__body{
+        font-size: clamp(1rem, 1.35rem, 3rem);
+    }
+}
+
+
+
+
+
+  

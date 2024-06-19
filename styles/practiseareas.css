@@ -1,0 +1,107 @@
+.container{
+    overflow:hidden;
+}
+.practise__areas{
+    height:200px;
+}
+.practise{
+    align-items: center;
+    position: relative;
+    height:100px;
+    --gap:1.5rem;
+    margin-top: 2rem;
+}
+.practise ul{
+   
+    padding-inline:1rem;
+    user-select: none;
+    overflow-x: scroll;
+   scroll-behavior: smooth;
+   -ms-overflow-style: none;
+   scrollbar-width: none;
+   --gap:3rem;
+}
+.area_text{
+    text-align: center;
+    margin-top:0.5rem;
+    font-weight: 600;
+    width:100%;
+    padding-inline:0.8rem;
+}
+.object{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.practise ul:hover{
+    cursor: grab;
+}
+
+.practise ul.dragging{
+    
+   scroll-behavior: auto;
+}
+.practise ul.dragging .object{
+    pointer-events: none;
+}
+.practise ul::-webkit-scrollbar{
+    display: none;
+}
+
+
+.practise_svg1,
+.practise_svg2 {
+    
+    padding:0.4rem;
+    border-radius: 50%;
+    background-color: var(--linear-gradient);
+    width:22px;
+    height:22px;
+    stroke-width: 15;
+    fill:var(--body-white);
+   
+    
+}
+
+.practise .right-arrow,
+.practise .left-arrow{
+    height:100%;
+    position: absolute;
+    top:-10px;
+    padding:0 10px;
+    display:none;
+    
+}
+
+.practise .right-arrow.active,
+.practise .left-arrow.active{
+display: none;
+    
+}
+.practise .right-arrow{
+    right:0;
+    background: linear-gradient(to left, var(--body-white) 60%, transparent);
+}
+
+.practise .left-arrow {
+    z-index:99999;
+    background: linear-gradient(to right, var(--body-white) 60%, transparent);
+}
+
+
+.area{
+    border:2px solid black;
+    padding:0.5rem;
+    border-radius: 8px;
+    height:40px;
+    box-shadow: 0 0 15px #141414;
+    clip-path: inset(0px 0px -3px 0px);
+}
+
+@media (min-width:768px) {
+    .practise .right-arrow.active,
+    .practise .left-arrow.active {
+        display: flex;
+        align-items: center;
+    }
+}
