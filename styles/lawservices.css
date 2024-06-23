@@ -92,7 +92,7 @@
 
   .card__title{
     white-space: nowrap;
-    margin-top:1rem;
+    margin-top:3rem !important;
     margin-inline:1rem;
     display:flex;
     justify-content: center;
@@ -127,7 +127,7 @@
   .law_preview .preview{
     width: 291px;
     max-width:291px;
-    height:250px;
+    height:240px;
    border: 2px solid var(--body-black);
    border-radius: 5px;
     display: none;
@@ -142,15 +142,26 @@
    font-weight: 600;
    margin-bottom: 1rem;
   }
-  .law_preview .preview .card__info{
+  .preview:nth-child(4) .preview__title,
+  .preview:nth-child(5) .preview__title,
+  .preview:nth-child(6) .preview__title
+  {
+    margin-top:5rem;
+  }
+  .law_preview .preview .preview__info{
  
     width:100%;
-   
+  
     text-align: left;
-    line-height: 0.7rem;
+    line-height: 1rem;
+  }
+  .preview__list{
+  
+    width:100%;
+    
   }
   .law_preview .preview h2{
-   margin-top: 2rem;
+   margin-top: 3rem;
    letter-spacing: 0rem;
    margin-bottom: 0.5rem;
     width:100%;
@@ -165,33 +176,19 @@
 
  .law_preview .preview .fa-times{
   position: absolute;
-  top:0.5rem; right:1.0rem;
+  top:1rem; right:1.0rem;
   cursor: pointer;
   color:#141414;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
+
 .card__info_point{
   margin-top: 0.5rem;
   display: flex;
+  width:100%;
+  text-align: justify;
+ 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media (min-width:375px){
   .container{
@@ -317,7 +314,7 @@
       .law__card:hover .card__content_hover{
         opacity: 1;
       }
-        
+     
     }
     
     
@@ -363,30 +360,50 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      --gap:1rem;
+      --gap:0.5rem !important;
       transition:transform 0.6s;
       transform-style: preserve-3d;
-    }
-    .card__title{
-      margin-top:3rem;
-      padding:1rem;
-      white-space: nowrap;
-      display: flex;
+      font-size: var(--fs-100);
+    
       
+
+    }
+    .law__card:nth-child(1) .card__title,
+    .law__card:nth-child(2) .card__title,
+    .law__card:nth-child(3) .card__title
+    {
+      margin-top:3.5rem !important;
+    }
+    .card__title
+    
+    {
+      margin-top:5rem !important;
+      padding-inline:1rem;
+      white-space: nowrap;
+
     }
     .card__inner .card__info,
     .card__inner .card__title
     {
       margin-bottom: 0;
-      padding-inline: 1rem;
-
+      line-height: 1rem;
+      
+      padding-inline: 1.5rem;
+    }
+    .card__info{
+      margin-top:0.2rem;
+      line-height:0.9rem;
       
     }
     .card__list{
-      line-height: 1.5rem;
      
+      width:100%;
+      margin-top: 0 !important;
+      line-height: 1rem;
+      padding-inline:1.5rem;
+   
     }
-  
+    
     .law__card:hover .card__inner
     {
       opacity: 1;
@@ -415,5 +432,18 @@
     }
     .card__content{
       font-size: var(--fs-300);
+    }
+    .law__card:nth-child(1) .card__title,
+    .law__card:nth-child(2) .card__title,
+    .law__card:nth-child(3) .card__title
+    {
+      margin-top:5rem !important;
+    }
+    .card__title
+    
+    {
+      margin-top:7rem !important;
+      padding-inline:1rem;
+      white-space: nowrap;
     }
   }
