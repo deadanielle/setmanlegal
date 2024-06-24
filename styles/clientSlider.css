@@ -36,7 +36,7 @@
 .client_slider >.slick-list
 {
     position: relative;
-    top:-110px;
+    top:-90px;
     left:1px;
     display: block;
     overflow: hidden;
