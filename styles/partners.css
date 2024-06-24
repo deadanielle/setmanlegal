@@ -107,12 +107,26 @@ svg{
 
 }
 
-.close_button{
+.close_button_2,
+.close_button_1,
+.close_button_3 {
+    width:15px;
+    height:15px;
+    fill:var(--body-black);
     position: absolute;
     top:0;
-    right:8px;
-    padding:0.8rem;
-    
+}
+.close_button_1{
+    right:0;
+    padding:0.5rem;
+}
+.close_button_2{
+    right:0;
+    padding:0.2rem;
+}
+.close_button_3{
+    right:0;
+    padding:0.6rem;
 }
 .close_button svg{
     width:15px;
@@ -166,6 +180,7 @@ svg{
 .mail_envelope{
     width:30px;
     height:30px;
+    margin-bottom:3px;
 }
  
 
@@ -179,7 +194,7 @@ svg{
             padding:0.5rem;
             border:0;
             border-radius: 8px;
-            width:280px !important;
+            width:300px !important;
             max-width: 50ch;
             margin-inline:auto;
             font-size: var(--fs-500);
@@ -192,7 +207,7 @@ svg{
             width:190px;
             margin-top:1.5rem;
             width:100%;
-           height:230px;
+           height:280px;
             
             
         }
@@ -205,17 +220,26 @@ svg{
         
         }
         
-        .close_button{
-            position: absolute;
-            top:0;
-            right:8px;
-            padding:0.5rem;
-            
-        }
-        .close_button svg{
+        .close_button_2,
+        .close_button_1,
+        .close_button_3 {
             width:15px;
             height:15px;
             fill:var(--body-black);
+            position: absolute;
+            top:0;
+        }
+        .close_button_1{
+            right:2px;
+            padding:0.5rem;
+        }
+        .close_button_2{
+            right:8px;
+            padding:0.1rem;
+        }
+        .close_button_3{
+            right:0;
+            padding:0.6rem;
         }
         .close_button,
         .open_button{
@@ -252,7 +276,7 @@ svg{
         box-shadow: 0 0 5px 0.2px #141414;
         width:300px;
         margin-top:1.5rem;
-       height:230px;
+       height:280px;
         
     }
     .modal p
@@ -264,17 +288,26 @@ svg{
     
     }
     
-    .close_button{
-        position: absolute;
-        top:0;
-        right:8px;
-        padding:0.5rem;
-        
-    }
-    .close_button svg{
+    .close_button_2,
+    .close_button_1,
+    .close_button_3 {
         width:15px;
         height:15px;
         fill:var(--body-black);
+        position: absolute;
+        top:0;
+    }
+    .close_button_1{
+        right:7px;
+        padding:0.8rem;
+    }
+    .close_button_2{
+        right:15px;
+        padding:0.3rem;
+    }
+    .close_button_3{
+        right:10px;
+        padding:0.7rem;
     }
     .close_button,
     .open_button{
@@ -371,19 +404,28 @@ svg{
         width: 100%;
     
     }
-    
-    .close_button{
-        position: absolute;
-        top:0;
-        right:8px;
-        padding:0.5rem;
-        
-    }
-    .close_button svg{
+    .close_button_2,
+    .close_button_1,
+    .close_button_3 {
         width:15px;
         height:15px;
         fill:var(--body-black);
+        position: absolute;
+        top:0;
     }
+    .close_button_1{
+        right:3px;
+        padding:0.9rem;
+    }
+    .close_button_2{
+        right:15px;
+        padding:0.4rem;
+    }
+    .close_button_3{
+        right:10px;
+        padding:0.8rem;
+    }
+    
     .close_button,
     .open_button{
         font-weight: 700;
