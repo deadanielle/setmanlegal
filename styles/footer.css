@@ -69,7 +69,13 @@
         border-radius: 50%;
     }
 }
-
+@media (min-width:1024px) {
+    .footer{
+        font-size: 10px !important;
+        padding-inline: 10rem;
+    }
+ 
+}
 @media (min-width:1440px) {
     .footer{
         font-size: 10px !important;
