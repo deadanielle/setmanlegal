@@ -116,7 +116,7 @@
     .client_slider >.slick-list
 {
     position: relative;
-    top:-140px;
+    top:-120px;
     left:0;
     display: block;
     overflow: hidden;
@@ -147,7 +147,7 @@
     .client_slider >.slick-list
     {
         position: relative;
-        top:-160px;
+        top:-140px;
         left:0;
         display: block;
         overflow: hidden;
@@ -166,7 +166,7 @@
     .client_slider >.slick-list
     {
         position: relative;
-        top:-118px;
+        top:-100px;
         left:0;
         display: block;
         overflow: hidden;
