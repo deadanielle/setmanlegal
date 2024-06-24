@@ -503,6 +503,16 @@ svg{
     .partner_contact_details{
         display:flex;
     }
+     .partner_contact_details{
+
+        align-items: center;
+        justify-content: center;
+        width:100%;
+    }
+    .partner_contact_details .partner_linkedin{
+        margin-bottom: 0.2rem;
+        padding-right: 0.5rem;
+    }
     
   }
 
